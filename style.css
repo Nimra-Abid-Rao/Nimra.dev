@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.nav-link {
+    color: #d1d5db;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #C084FC;
+}
+
+/* Hero */
+.hero-image-wrapper {
+    position: relative;
+    padding: 12px;
+}
+
+.hero-image-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #C084FC;
+    border-radius: 35px;
+    transform: rotate(6deg);
+    box-shadow: 0 0 30px rgba(192, 132, 252, 0.35);
+}
+
+.hero-image {
+    position: relative;
+    width: 380px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid #C084FC;
+    box-shadow: 0 0 35px rgba(192, 132, 252, 0.35);
+    transition: 0.5s;
+}
+
+.hero-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 50px rgba(192, 132, 252, 0.55);
+}
+
+/* About */
+#pic {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: grayscale(100%);
+    border: 2px solid rgba(192, 132, 252, 0.35);
+    box-shadow: 0 0 30px rgba(192, 132, 252, 0.12);
+    transition: 0.5s;
+}
+
+#pic:hover {
+    filter: grayscale(0%);
+    border-color: #C084FC;
+    box-shadow: 0 0 35px rgba(192, 132, 252, 0.35);
+    cursor: pointer;
+}
+
+/* Education */
+.education-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(192, 132, 252, 0.25);
+    border-radius: 18px;
+    background-color: #0a0a0a;
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    border-color: #C084FC;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(192, 132, 252, 0.08);
+}
+
+.education-number {
+    min-width: 65px;
+    height: 65px;
+    border: 2px solid #C084FC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C084FC;
+    font-weight: bold;
+}
+
+/* Skills */
+.skill-card {
+    padding: 25px;
+    border: 1px solid rgba(192, 132, 252, 0.25);
+    border-radius: 18px;
+    background-color: #080808;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: #C084FC;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(192, 132, 252, 0.1);
+}
+
+.skill-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C084FC;
+    border-radius: 12px;
+    color: #C084FC;
+    font-weight: bold;
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.skill-card p {
+    color: #777;
+    margin-top: 8px;
+    line-height: 1.7;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 7px;
+    background-color: #222;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #C084FC;
+    border-radius: 20px;
+}
+
+.skill-progress.html {
+    width: 90%;
+}
+
+.skill-progress.css {
+    width: 85%;
+}
+
+.skill-progress.tailwind {
+    width: 80%;
+}
+
+.skill-progress.github {
+    width: 70%;
+}
+
+.skill-progress.canva {
+    width: 75%;
+}
+
+/* Contact */
+.contact-form {
+padding: 35px;
+border: 1px solid rgba(192, 132, 252, 0.25);
+border-radius: 18px;
+background-color: #0a0a0a;
+}
+
+.contact-input {
+width: 100%;
+padding: 14px 16px;
+background-color: #080808;
+border: 1px solid rgba(192, 132, 252, 0.25);
+border-radius: 10px;
+color: white;
+outline: none;
+transition: 0.3s;
+}
+
+.contact-input::placeholder {
+color: #666;
+}
+
+.contact-input:focus {
+border-color: #C084FC;
+box-shadow: 0 0 15px rgba(192, 132, 252, 0.12);
+}
+
+.contact-submit {
+width: 100%;
+padding: 13px 20px;
+background-color: #C084FC;
+color: black;
+font-weight: 600;
+border-radius: 10px;
+transition: 0.3s;
+}
+
+.contact-submit:hover {
+background-color: #D8B4FE;
+transform: translateY(-2px);
+}
+
+/* Social Contact Cards */
+.contact-card {
+padding: 28px 20px;
+text-align: center;
+border: 1px solid rgba(192, 132, 252, 0.25);
+border-radius: 18px;
+background-color: #0a0a0a;
+transition: 0.3s;
+}
+
+.contact-card:hover {
+border-color: #C084FC;
+transform: translateY(-6px);
+box-shadow: 0 10px 30px rgba(192, 132, 252, 0.1);
+}
+
+.contact-logo {
+width: 60px;
+height: 60px;
+margin: 0 auto 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #C084FC;
+border-radius: 50%;
+color: #C084FC;
+}
+
+.contact-card h3 {
+font-size: 20px;
+font-weight: 600;
+}
+
+.contact-card p {
+color: #777;
+margin-top: 7px;
+}
+
+/* Footer */
+.footer-link {
+    color: #777;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #C084FC;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero-image {
+        width: 300px;
+        height: 350px;
+    }
+
+    .education-card {
+        gap: 18px;
+        padding: 22px;
+    }
+
+    .education-number {
+        min-width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+}

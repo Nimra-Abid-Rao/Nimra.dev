@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="code.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>NIMRA.DEV</title>
+</head>
+<body class="bg-black text-white">
+<!-- Navbar-->
+<nav class="bg-black fixed w-full z-50 top-0 left-0 border-b border-[#C084FC]">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#home" class="flex items-center space-x-3">
+            <img src="code.png"class="h-8"alt="Code Logo">
+            <span class="text-3xl font-semibold">Nimra<span class="text-[#C084FC]">.dev</span></span>
+        </a>
+        <button data-collapse-toggle="navbar-default"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-300 rounded-lg md:hidden hover:bg-[#C084FC]/20 focus:outline-none"
+                aria-controls="navbar-default"
+                aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6"
+                 aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24">
+                <path stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="M5 7h14M5 12h14M5 17h14">
+                </path>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#C084FC]/30 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-xl gap-3 md:gap-0">
+                <li><a href="#home"class="nav-link block py-2 px-3">Home</a></li>
+                <li><a href="#about"class="nav-link block py-2 px-3">About Me</a></li>
+                <li><a href="#education"class="nav-link block py-2 px-3">Education</a></li>
+                <li><a href="#skills"class="nav-link block py-2 px-3">Skills</a></li>
+                <li><a href="#contact"class="nav-link block py-2 px-3">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home"class="min-h-screen pt-32 pb-20 flex items-center">
+    <div class="container mx-auto px-5">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <p class="text-[#C084FC] text-xl mb-4">Hello, I'm</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-5">Nimra<span class="text-[#C084FC]">Abid Rao</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">Frontend Developer</h2>
+                <p class="text-gray-400 leading-8 max-w-xl mb-8">
+                    I create clean, responsive and beautiful websites
+                    using modern frontend technologies. I enjoy learning,
+                    designing and turning creative ideas into digital experiences.</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4"><a href="#about"class="bg-[#C084FC] text-black font-semibold py-3 px-7 rounded-lg hover:bg-[#D8B4FE] transition duration-300">About Me</a>
+                    <a href="#contact"class="border-2 border-[#C084FC] text-[#C084FC] font-semibold py-3 px-7 rounded-lg hover:bg-[#C084FC] hover:text-black transition duration-300">Contact Me</a>
+                </div>
+                <div class="flex justify-center md:justify-start gap-10 mt-12">
+                    <div><h3 class="text-3xl font-bold text-[#C084FC]">2</h3><p class="text-gray-500">Skills</p>
+                    </div>
+                    <div><h3 class="text-3xl font-bold text-[#C084FC]">∞</h3>
+                        <p class="text-gray-500">Ideas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="hero-image-wrapper"><img src="Pic.jpeg"alt="Nimra"class="hero-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about"class="py-28 border-t border-[#C084FC]/10">
+    <div class="container mx-auto px-5">
+        <div class="text-center mb-16">
+            <p class="text-[#C084FC] text-lg mb-3">GET TO KNOW ME</p>
+            <h2 class="text-4xl md:text-5xl font-bold">&lt;<span class="text-[#C084FC]">About Me</span>/&gt;</h2>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-14">
+            <div class="md:w-1/2"><img src="coding.jpg"alt="Coding"id="pic">
+            </div>
+            <div class="md:w-1/2"><p class="text-[#C084FC] text-xl mb-4">FRONTEND DEVELOPER | STUDENT | FREELANCER</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">I'm<span class="text-[#C084FC]">Nimra Abid Rao</span></h2>
+                <p class="text-gray-400 leading-8 mb-6">
+                    I'm a frontend developer and student who enjoys
+                    creating modern and responsive websites. I am
+                    continuously learning new skills and improving
+                    my knowledge of web development and design.</p>
+                <p class="text-gray-400 leading-8 mb-8">
+                    I love experimenting with new ideas and turning
+                    them into simple, useful and beautiful digital
+                    experiences.</p>
+                <a href="#skills"
+                   class="inline-block border-2 border-[#C084FC]
+                          text-[#C084FC] font-semibold
+                          py-3 px-7 rounded-lg
+                          hover:bg-[#C084FC]
+                          hover:text-black
+                          transition duration-300">
+                    View My Skills</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+
+<section id="education"
+         class="py-28 bg-[#080808] border-t border-[#C084FC]/10"><div class="container mx-auto px-5 max-w-5xl">
+        <div class="text-center mb-16"><p class="text-[#C084FC] text-lg mb-3">MY LEARNING JOURNEY</p>
+            <h2 class="text-4xl md:text-5xl font-bold">Education</h2>
+        </div>
+        <div class="education-card"><div class="education-number">01</div>
+            <div>
+                <p class="text-[#C084FC] mb-2">Currently Learning</p>
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Modern Web And App Development</h3>
+                <p class="text-gray-400 leading-8">
+                    Learning modern web and app development with
+                    a focus on creating responsive and user-friendly
+                    digital experiences.</p>
+                 </div>
+        </div>
+        <div class="education-card">
+            <div class="education-number">02</div>
+            <div>
+                <p class="text-[#C084FC] mb-2">Currently Learning</p>
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Graphic Designing</h3>
+                <p class="text-gray-400 leading-8">
+                    Learning graphic designing and exploring creative
+                    ways to communicate ideas through visual design.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills"class="py-28">
+    <div class="container mx-auto px-5">
+        <div class="text-center mb-16"><p class="text-[#C084FC] text-lg mb-3">WHAT I USE</p>
+            <h2 class="text-4xl md:text-5xl font-bold">My Skills</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="skill-card">
+                <div class="skill-icon">HTML</div>
+                <h3>HTML</h3>
+                <p>Creating structured and semantic webpages.</p>
+                <div class="skill-bar"><div class="skill-progress html"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">CSS</div>
+                <h3>CSS</h3>
+                <p>Designing responsive and attractive layouts.</p>
+                <div class="skill-bar"><div class="skill-progress css"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">TW</div>
+                <h3>Tailwind CSS</h3>
+                <p>Building responsive interfaces with utility classes.</p>
+                <div class="skill-bar"><div class="skill-progress tailwind"></div>
+                </div>
+            </div>
+            <div class="skill-card"><div class="skill-icon">GH</div>
+                <h3>GitHub</h3>
+                <p>Managing and publishing web development projects.</p>
+                <div class="skill-bar"><div class="skill-progress github"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">C</div>
+                <h3>Canva</h3>
+                <p>Creating creative graphics and visual designs.</p>
+                <div class="skill-bar">
+                    <div class="skill-progress canva"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section Start -->
+<section id="contact"class="py-28 bg-[#080808] border-t border-[#C084FC]/10">
+<div class="container mx-auto px-5 max-w-5xl">
+    <div class="text-center mb-16"><p class="text-[#C084FC] text-lg mb-3">GET IN TOUCH</p>
+        <h2 class="text-4xl md:text-5xl font-bold">Contact Me</h2>
+        <p class="text-gray-400 mt-6 max-w-xl mx-auto">
+            Feel free to send me a message or connect with me
+            through GitHub, LinkedIn or email.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+            <form>
+                <div class="mb-5">
+                    <label for="name"class="block text-gray-300 mb-2">Name</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name"
+                           required
+                           class="contact-input">
+                </div>
+                <div class="mb-5">
+                    <label for="email"class="block text-gray-300 mb-2">Email</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required
+                           class="contact-input">
+                </div>
+                <div class="mb-6">
+                    <label for="message"class="block text-gray-300 mb-2">Message</label>
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              placeholder="Write your message..."
+                              required
+                              class="contact-input resize-none"></textarea>
+                </div>
+                <button type="submit"class="contact-submit">Send Message</button>
+            </form>
+        </div>
+        <!-- Social Links -->
+        <div class="grid md:grid-cols-1 gap-6">
+            <a href="https://github.com/Nimra-Abid-Rao"
+               target="_blank"
+               class="contact-card">
+                <div class="contact-logo">
+                    <svg viewBox="0 0 24 24"
+                         fill="currentColor"
+                         class="w-7 h-7">
+                        <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.96 3.22 9.18 7.68 10.67.56.1.76-.24.76-.54v-2.1c-3.12.68-3.78-1.5-3.78-1.5-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.55 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.7 10.7 0 0 1 5.64 0c2.15-1.46 3.1-1.16 3.1-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.31-2.63 5.27-5.13 5.55.4.35.75 1.04.75 2.1v3.11c0 .3.2.65.77.54a11.26 11.26 0 0 0 7.67-10.67C23.25 5.48 18.27.5 12 .5Z"/>
+                    </svg>
+                </div>
+                <h3>GitHub</h3>
+                <p>View my projects</p>
+            </a>
+            <a href="www.linkedin.com/in/nimra-abid-rao"
+               target="_blank"
+               class="contact-card">
+                <div class="contact-logo">
+                    <svg viewBox="0 0 24 24"
+                         fill="currentColor"
+                         class="w-7 h-7">
+                        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.34V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.48v6.27ZM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.1 20.45H3.55V8.99H7.1v11.46ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/>
+                    </svg>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>Connect with me</p>
+            </a>
+            <a href="mailto:abidnimra130@gmail.com"class="contact-card">
+                <div class="contact-logo">
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         class="w-7 h-7">
+                        <rect x="3"
+                              y="5"
+                              width="18"
+                              height="14"
+                              rx="2">
+                        </rect>
+                        <path d="m3 7 9 6 9-6">
+                        </path>
+                    </svg>
+                </div>
+                <h3>Email</h3>
+                <p>Send me a message</p>
+            </a>
+        </div>
+    </div>
+</div>
+</secion>
+
+<!-- Footer Start -->
+<footer class="bg-black border-t border-[#C084FC]/20">
+    <div class="container mx-auto px-5 py-10">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+            <div><h2 class="text-2xl font-bold">Nimra<span class="text-[#C084FC]">.dev</span></h2>
+                <p class="text-gray-500 mt-2">Frontend Developer</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#home"class="footer-link">Home</a>
+                <a href="#about"class="footer-link">About</a>
+                <a href="#education"class="footer-link">Education
+                </a>
+                <a href="#skills"class="footer-link">Skills
+                </a>
+                <a href="#contact"class="footer-link">Contact
+                </a>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-6 text-center"><p class="text-gray-600 text-sm">
+                © 2026 Nimra.dev. All rights reserved.
+                <br>
+                Created By: NIMRA ABID RAO
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+</html>
